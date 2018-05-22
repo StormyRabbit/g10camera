@@ -17,8 +17,8 @@ CAM = cv.VideoCapture(0)
 
 DETECTOR = cv.CascadeClassifier('haarcascade_frontalface_default.xml')
 RECOGNIZER = cv.face.LBPHFaceRecognizer_create()
-USER_PATH = "users/"
-USER_XML_PATH = "user_xml/"
+USER_PATH = "images/"
+USER_XML_PATH = "users"
 PICTURES_TO_TAKE = 100
 
 if not os.path.exists(USER_XML_PATH):
