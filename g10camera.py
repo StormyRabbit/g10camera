@@ -127,7 +127,6 @@ class camera:
                 user, conf = RECOGNIZER.predict(gray[y:y+h, x:x+w])
                 # convert the wierd conf system used by openCV to actual %, higher == better.
                 conf = 100 - round(float(conf),2)
-                print("USER: {} \n CONF: {}".format(user, conf))
                 if conf > 50:
                     try:
                         text = "{} CONF: {}%".format(USERS[str(user)], conf)
